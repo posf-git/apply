@@ -1,4 +1,4 @@
-# Pyro Open Source Foundation (POSF)
+# Apply
 
 **Welcome!** If you maintain an open‑source project and need **free, reliable, and scalable** hosting, you’ve come to the right place.
 
