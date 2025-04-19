@@ -1,0 +1,254 @@
+name: posf-hosting-application
+description: Apply for free infrastructure hosting from the Pyro Open Source Foundation
+title: "[Hosting Application] ${{ inputs.project-name }}"
+labels:
+  - hosting-request
+assignees:
+  - ChecksumDev
+
+body:
+  # 🚀 Welcome
+  - type: markdown
+    attributes:
+      value: |
+        🚀 **Welcome to the POSF Hosting Application!**  
+        Please complete all **required** fields so we can evaluate your request quickly.
+
+  # Project Overview
+  - type: input
+    id: project-name
+    attributes:
+      label: "Project Name"
+      description: "What’s the name of your project?"
+      placeholder: "MyCoolProject"
+    validations:
+      required: true
+
+  - type: input
+    id: repository-url
+    attributes:
+      label: "Repository URL"
+      description: "Link to your source code (e.g. GitHub, GitLab)."
+      placeholder: "https://github.com/username/repo"
+    validations:
+      required: true
+
+  - type: input
+    id: homepage-url
+    attributes:
+      label: "Homepage / Docs URL"
+      description: "Optional: project website or documentation."
+      placeholder: "https://mycoolproject.org"
+
+  - type: input
+    id: license
+    attributes:
+      label: "License (with link)"
+      description: "e.g. MIT — https://opensource.org/licenses/MIT"
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-purpose
+    attributes:
+      label: "Project Purpose & Goals"
+      description: "Briefly describe your project’s purpose, intended users, and goals."
+      placeholder: "A CLI tool to manage reproducible research environments using Docker and Conda."
+
+  # Maintainer & Contact
+  - type: input
+    id: maintainer-name
+    attributes:
+      label: "Primary Maintainer (name & role)"
+    validations:
+      required: true
+
+  - type: input
+    id: contact-email
+    attributes:
+      label: "Contact Email"
+    validations:
+      required: true
+
+  - type: input
+    id: affiliation
+    attributes:
+      label: "Organization / Affiliation"
+      description: "Your company, group, or none."
+
+  - type: input
+    id: preferred-contact
+    attributes:
+      label: "Preferred Contact Channel"
+      description: "e.g. Matrix, Discord, Slack, Email."
+
+  # Tech Stack & Hosting Requirements
+  - type: input
+    id: languages
+    attributes:
+      label: "Languages / Runtimes"
+      description: "List primary languages and versions."
+      placeholder: "Python 3.11, Node.js 18"
+
+  - type: input
+    id: frameworks
+    attributes:
+      label: "Frameworks / Libraries"
+      description: "Key frameworks your project depends on."
+      placeholder: "Django, React, TensorFlow"
+
+  - type: dropdown
+    id: containerized
+    attributes:
+      label: "Containerized?"
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: input
+    id: cicd-system
+    attributes:
+      label: "CI/CD System"
+      description: "e.g. GitHub Actions, GitLab CI, Jenkins"
+
+  ### Hosting Environment
+  - type: dropdown
+    id: infra-type
+    attributes:
+      label: "Preferred Infrastructure Type"
+      options:
+        - "Docker container"
+        - "Virtual Private Server (VPS)"
+        - "Kubernetes cluster"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: infra-type-other
+    attributes:
+      label: "If Other, describe"
+      description: "Only if you selected “Other” above."
+
+  - type: dropdown
+    id: usage-scale
+    attributes:
+      label: "Usage Scale"
+      options:
+        - "Development / testing"
+        - "Production (single instance)"
+        - "Production (high availability)"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: usage-scale-other
+    attributes:
+      label: "If Other, describe"
+      description: "Only if you selected “Other” above."
+
+  - type: input
+    id: cpu
+    attributes:
+      label: "Estimated CPU (cores)"
+      description: "Approximate number of vCPUs."
+
+  - type: input
+    id: ram
+    attributes:
+      label: "Estimated RAM (GB)"
+
+  - type: input
+    id: storage
+    attributes:
+      label: "Estimated Storage (GB)"
+
+  - type: input
+    id: bandwidth
+    attributes:
+      label: "Estimated Bandwidth / Month (GB)"
+
+  # Popularity & Adoption
+  - type: input
+    id: github-stars
+    attributes:
+      label: "GitHub Stars"
+
+  - type: input
+    id: github-forks
+    attributes:
+      label: "GitHub Forks"
+
+  - type: input
+    id: downloads
+    attributes:
+      label: "Monthly Installs / Downloads"
+
+  - type: input
+    id: active-users
+    attributes:
+      label: "Estimated Active Users"
+
+  - type: textarea
+    id: notable-users
+    attributes:
+      label: "Notable Users / Organizations"
+      description: "If any projects or companies you know of that use this."
+
+  # Maintenance & Roadmap
+  - type: input
+    id: release-schedule
+    attributes:
+      label: "Release Schedule"
+      description: "e.g. weekly, monthly, on‑demand."
+
+  - type: input
+    id: contributors
+    attributes:
+      label: "Active Contributors"
+      description: "How many people actively contribute?"
+
+  - type: textarea
+    id: next-milestones
+    attributes:
+      label: "Next Major Milestones"
+
+  # Why POSF Hosting?
+  - type: textarea
+    id: why-posf
+    attributes:
+      label: "Why POSF Hosting?"
+      description: "What infrastructure pain points are you facing? How will POSF hosting help?"
+
+  # Acknowledgment & SLA
+  - type: textarea
+    id: credit
+    attributes:
+      label: "How will you credit POSF?"
+      description: "e.g. logo in footer, mention in docs."
+
+  - type: dropdown
+    id: sla-expectation
+    attributes:
+      label: "Support / Uptime Expectations"
+      options:
+        - "Best effort"
+        - "99.9% SLA"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: sla-other
+    attributes:
+      label: "If Other, describe"
+
+  # Anything Else
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Anything Else?"
+      description: "Links to diagrams, dashboards, configs, monitoring, etc."
