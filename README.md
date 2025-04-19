@@ -4,6 +4,9 @@
 
 POSF, backed by our parent entity [Pyro](https://pyro.host), provides infrastructure that empowers open‑source communities.
 
+## 🚧 Important Notice
+
+> **Please note:** POSF is currently in early alpha. Initial onboarding may take longer than the 7 business days stated below. Thank you for your patience!
 
 ## 🚀 Quick Start
 
@@ -12,7 +15,7 @@ POSF, backed by our parent entity [Pyro](https://pyro.host), provides infrastruc
    - The primary code repository must be public and active.
 
 2. **Apply**  
-   - Click **[New Issue](../../issues/new?assignees=&labels=hosting-request&template=posf_hosting_application.yml)**.  
+   - Click **[New Issue](../../issues/new?template=posf_hosting_application.yml)**.  
    - Choose the **“POSF Hosting Application”** template.  
    - Fill in the requested details:  
      - Architecture diagram (optional but helpful)  
@@ -26,17 +29,6 @@ POSF, backed by our parent entity [Pyro](https://pyro.host), provides infrastruc
    - Once approved, you’ll receive access credentials and onboarding documentation.
 
 > **Heads up:** An application does **not** guarantee acceptance. Approval depends on resource availability, project maturity, and community impact.
-
-## ✅ Application Checklist
-
-Please confirm your issue includes:
-
-- **Project name & one‑line description**  
-- **Repository URL** (public and active)  
-- **Requested hosting model**  
-- **Resource estimates** (CPU, RAM, storage, bandwidth)  
-- **Security & compliance** notes (TLS, data residency, backups)  
-- **Primary point of contact** (name & email)  
 
 ## 🛠️ Supported Hosting Models
 
