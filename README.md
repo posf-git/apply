@@ -1,8 +1,8 @@
 # Apply
 
-**Welcome!** If you maintain an open‑source project and need **free, reliable, and scalable** hosting, you’ve come to the right place.
+This is POSF's official application portal for hosting open‑source projects.
 
-POSF, backed by our parent entity [Pyro](https://pyro.host), provides infrastructure that empowers open‑source communities.
+We're backed by our parent organization, [Pyro](https://pyro.host), and our mission is to provide free, reliable, and secure hosting for open‑source projects.
 
 ## 🚧 Important Notice
 
@@ -48,7 +48,9 @@ We welcome improvements to our documentation, templates, and workflows.
 
 ## 💖 Donations
 
-If you’d like to support POSF, consider donating via [Liberapay](https://liberapay.com/pyro/) or [GitHub Sponsors](https://github.com/posf-git/sponsors). Your contributions help us maintain and expand our infrastructure for the open‑source community.
+If you’d like to support POSF, consider donating via [Liberapay](https://liberapay.com/pyro/) or [GitHub Sponsors](https://github.com/posf-git/sponsors).
+
+Your contributions help us maintain and expand our infrastructure for the open‑source community.
 
 ## 📝 License
 
