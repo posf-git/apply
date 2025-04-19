@@ -1,8 +1,9 @@
 name: posf-hosting-application
 description: Apply for free infrastructure hosting from the Pyro Open Source Foundation
-title: "[Hosting Application] ${{ inputs.project-name }}"
+title: "[Hosting Application] <MyCoolProject>"
 labels:
-  - hosting-request
+  - application
+  - pending
 assignees:
   - ChecksumDev
 
@@ -13,6 +14,7 @@ body:
       value: |
         🚀 **Welcome to the POSF Hosting Application!**  
         Please complete all **required** fields so we can evaluate your request quickly.
+        If you have any questions, feel free to reach out to us on [Discord](https://discord.gg/FhfuGkYgvv).
 
   # Project Overview
   - type: input
@@ -203,7 +205,7 @@ body:
     id: release-schedule
     attributes:
       label: "Release Schedule"
-      description: "e.g. weekly, monthly, on‑demand."
+      description: "e.g. weekly, monthly, on-demand."
 
   - type: input
     id: contributors
@@ -228,7 +230,8 @@ body:
     id: credit
     attributes:
       label: "How will you credit POSF?"
-      description: "e.g. logo in footer, mention in docs."
+      description: "e.g. logo in footer, mention in docs, none."
+      placeholder: "We will credit POSF in our README and website."
 
   - type: dropdown
     id: sla-expectation
